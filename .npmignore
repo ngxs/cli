@@ -1,0 +1,9 @@
+.idea
+node_modules
+src/
+tests/
+**/*.ts
+
+typings.d.ts
+tslint.json
+tsconfig.json

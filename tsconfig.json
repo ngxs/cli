@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noUnusedLocals": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2015", "es2017", "dom"],
+    "typeRoots": ["node_modules/@types"],
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "./lib"
+  },
+  "files": [
+    "./index.ts"
+  ],
+  "exclude": [
+    "node_modules/**"
+  ]
+}
