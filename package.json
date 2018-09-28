@@ -5,9 +5,16 @@
   "main": "./lib/index.js",
   "typings": "./lib/index.d",
   "author": "Maxim Ivanov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngxs/cli.git"
+  },
   "keywords": [
     "ngxs",
-    "cli"
+    "cli",
+    "angular",
+    "angular2",
+    "state-management"
   ],
   "scripts": {
     "prepublishOnly": "tsc -p tsconfig.json && cp -R src/plop-helpers lib/src/plop-helpers",
