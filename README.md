@@ -1,5 +1,12 @@
 # @ngxs/cli
-![npm version](https://badge.fury.io/js/%40ngxs%2Fcli.svg)
+
+<a href="https://travis-ci.org/ngxs/cli">
+  <img src="https://travis-ci.org/ngxs/cli.svg?branch=master">
+</a>
+
+<a href="https://badge.fury.io/js/%40ngxs%2Fcli">
+  <img src="https://badge.fury.io/js/%40ngxs%2Fcli.svg" alt="@ngxs/cli">
+</a>
 
 ![CLI Screenshot](https://raw.githubusercontent.com/ngxs/store/master/docs/assets/cli.gif)
 
