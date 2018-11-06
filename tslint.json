@@ -151,6 +151,7 @@
     "no-output-rename": false,
     "use-life-cycle-interface": false,
     "component-class-suffix": false,
-    "directive-class-suffix": false
+    "directive-class-suffix": false,
+    "arrow-parens": false
   }
 }
