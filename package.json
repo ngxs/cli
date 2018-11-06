@@ -29,7 +29,7 @@
     "test": "ts-mocha --paths -p ./tsconfig.json tests/*.spec.ts",
     "// - UTILS": "Utility Scripts",
     "lint": "tslint --exclude 'node_modules/**/*.ts' -c tslint.json '**/*.ts'",
-    "format": "prettier --write '*.{ts,js}'"
+    "format": "prettier --write '**/*.{ts,js}'"
   },
   "bin": {
     "ngxs": "./bin/ngxs.js"
