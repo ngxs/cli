@@ -5,16 +5,18 @@ export class AppStateModel {
   public items: string[];
 }
 
+const defaults = {
+  items: []
+};
+
 @State<AppStateModel>({
   name: 'app',
-  defaults: {
-    items: []
-  }
+  defaults
 })
 export class AppState {
   @Action(AppAction)
-  add(ctx: StateContext<AppStateModel>, action: AppAction) {
-    const state = ctx.getState();
-    ctx.setState({ items: [ ...state.items, action.payload ] });
+  add({ getState, setState }: StateContext<AppStateModel>, { payload }: AppAction) {
+    const state = getState();
+    setState({ items: [ ...state.items, payload ] });
   }
 }
