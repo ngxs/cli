@@ -5,16 +5,18 @@ export class {{pascalCase name}}StateModel {
   public items: string[];
 }
 
+const defaults = {
+  items: []
+};
+
 @State<{{pascalCase name}}StateModel>({
   name: '{{camelCase name}}',
-  defaults: {
-    items: []
-  }
+  defaults
 })
 export class {{pascalCase name}}State {
   @Action({{pascalCase name}}Action)
-  add(ctx: StateContext<{{pascalCase name}}StateModel>, action: {{pascalCase name}}Action) {
-    const state = ctx.getState();
-    ctx.setState({ items: [ ...state.items, action.payload ] });
+  add({ getState, setState }: StateContext<{{pascalCase name}}StateModel>, { payload }: {{pascalCase name}}Action) {
+    const state = getState();
+    setState({ items: [ ...state.items, payload ] });
   }
 }
