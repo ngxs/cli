@@ -1,5 +1,7 @@
 # @ngxs/cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngxs/cli.svg)](https://greenkeeper.io/)
+
 <a href="https://travis-ci.org/ngxs/cli">
   <img src="https://travis-ci.org/ngxs/cli.svg?branch=master">
 </a>
