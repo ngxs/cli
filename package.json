@@ -4,7 +4,10 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "typings": "./lib/index.d",
-  "author": "Maxim Ivanov",
+  "author": [
+    "Maxim Ivanov | @splincode",
+    "Kirill Yusupov | @kyusupov33"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ngxs/cli.git"
