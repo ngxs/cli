@@ -16,6 +16,7 @@
     "state-management"
   ],
   "scripts": {
+    "tsc": "tsc",
     "prepublishOnly": "tsc -p tsconfig.json && cp -R src/plop-helpers lib/src/plop-helpers",
     "plop": "plop",
     "ts-node": "ts-node",
