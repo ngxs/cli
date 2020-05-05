@@ -1,13 +1,10 @@
 {
   "name": "@ngxs/cli",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "./lib/index.js",
   "typings": "./lib/index.d",
-  "author": [
-    "Maxim Ivanov | @splincode",
-    "Kirill Yusupov | @kyusupov33"
-  ],
+  "author": "Maxim Ivanov",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ngxs/cli.git"
@@ -16,13 +13,10 @@
     "ngxs",
     "cli",
     "angular",
-    "angular2",
     "state-management"
   ],
   "scripts": {
     "prepublishOnly": "tsc -p tsconfig.json && cp -R src/plop-helpers lib/src/plop-helpers",
-    "// - Binaries": "Run against node_modules/.bin",
-    "tsc": "tsc",
     "plop": "plop",
     "ts-node": "ts-node",
     "node-plop": "node-plop",
@@ -63,6 +57,6 @@
     "tsconfig-paths": "^3.5.0",
     "tslib": "^1.9.3",
     "tslint": "^5.11.0",
-    "typescript": "2.7.1"
+    "typescript": "3.8.3"
   }
 }
