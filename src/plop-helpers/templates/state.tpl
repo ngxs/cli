@@ -1,3 +1,4 @@
+import { Injectable } from '@angular/core';
 import { State, Action, StateContext } from '@ngxs/store';
 import { {{pascalCase name}}Action } from './{{dashCase name}}.actions';
 
@@ -13,6 +14,7 @@ const defaults = {
   name: '{{camelCase name}}',
   defaults
 })
+@Injectable()
 export class {{pascalCase name}}State {
   @Action({{pascalCase name}}Action)
   add({ getState, setState }: StateContext<{{pascalCase name}}StateModel>, { payload }: {{pascalCase name}}Action) {
