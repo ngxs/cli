@@ -6,7 +6,7 @@ import { {{pascalCase name}}Action } from './{{dashCase name}}.actions';
 describe('{{pascalCase name}} actions', () => {
   let store: Store;
 
-  beforeEach((async() => {
+  beforeEach((async () => {
     await TestBed.configureTestingModule({
       imports: [NgxsModule.forRoot([{{pascalCase name}}State])]
     }).compileComponents();
