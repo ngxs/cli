@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import { NgxsModule, Store } from '@ngxs/store';
 import { {{pascalCase name}}State } from './{{dashCase name}}.state';
 import { {{pascalCase name}}Action } from './{{dashCase name}}.actions';
@@ -6,11 +6,11 @@ import { {{pascalCase name}}Action } from './{{dashCase name}}.actions';
 describe('{{pascalCase name}} actions', () => {
   let store: Store;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
+  beforeEach((async () => {
+    await TestBed.configureTestingModule({
       imports: [NgxsModule.forRoot([{{pascalCase name}}State])]
     }).compileComponents();
-    store = TestBed.get(Store);
+    store = TestBed.inject(Store);
   }));
 
   it('should create an action and add an item', () => {
