@@ -39,7 +39,7 @@ export class NgxsCliExecutor {
    * @description silent runnable cli (without prompt)
    * @param argv {ArgvTable}
    */
-  public static execNodePlop(argv: ArgvTable): Promise<GeneratorResults> {
+  public static async execNodePlop(argv: ArgvTable): Promise<GeneratorResults> {
     const { spec } = argv;
     const plopPath = resolve(...[__dirname, DEFAULT_CONFIG]);
     const plop = nodePlop(plopPath);
