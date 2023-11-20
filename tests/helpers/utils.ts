@@ -1,5 +1,5 @@
-import * as rimraf from 'rimraf';
 import * as path from 'path';
+import { rimraf } from 'rimraf';
 import * as fs from 'fs';
 
 export function readFile(relativePath: string) {
@@ -7,7 +7,5 @@ export function readFile(relativePath: string) {
 }
 
 export function removeDirectory(relativePath: string) {
-  rimraf(path.resolve(relativePath), () => {
-    console.log('[DONE]');
-  });
+  rimraf(path.resolve(relativePath)).then(() => console.log('[DONE]'));
 }

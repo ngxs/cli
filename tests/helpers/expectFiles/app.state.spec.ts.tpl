@@ -13,6 +13,10 @@ describe('App actions', () => {
     store = TestBed.inject(Store);
   }));
 
+  it('should create', () => {
+    expect(store).toBeTruthy();
+  });
+
   it('should create an action and add an item', () => {
     store.dispatch(new AppAction('item-1'));
     store.select(state => state.app.items).subscribe((items: string[]) => {

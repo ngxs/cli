@@ -13,6 +13,10 @@ describe('{{pascalCase name}} actions', () => {
     store = TestBed.inject(Store);
   }));
 
+  it('should create', () => {
+    expect(store).toBeTruthy();
+  });
+
   it('should create an action and add an item', () => {
     store.dispatch(new {{pascalCase name}}Action('item-1'));
     store.select(state => state.{{camelCase name}}.items).subscribe((items: string[]) => {
