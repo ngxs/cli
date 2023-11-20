@@ -5,7 +5,7 @@ import { cliArgv, expectedFiles, generatedFiles } from './helpers/config';
 import { expect } from 'chai';
 import 'mocha';
 
-describe('NgxsCli', () => {
+describe('NgxsCli', (): void => {
   let cliOutput: GeneratorResults = null;
 
   before(async () => (cliOutput = await NgxsCliExecutor.execNodePlop(cliArgv)));
