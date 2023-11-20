@@ -52,7 +52,7 @@
     "husky": "8.0.3",
     "lint-staged": "15.1.0",
     "mocha": "10.1.0",
-    "rimraf": "^2.6.2",
+    "rimraf": "4.4.1",
     "ts-mocha": "10.0.0",
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.2.0",
