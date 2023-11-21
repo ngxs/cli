@@ -4,7 +4,7 @@ export interface ArgumentOptions {
   alias: string;
 }
 
-export type CommandLineDefinitions = Array<Partial<ArgumentOptions>>;
+export type CommandLineDefinitions = Partial<ArgumentOptions>[];
 
 export interface Argv {
   help: boolean;
